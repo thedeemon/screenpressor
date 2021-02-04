@@ -26,22 +26,18 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>Intel C++ Compiler XE 13.0</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>Intel C++ Compiler XE 13.0</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>Intel C++ Compiler XE 13.0</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>Intel C++ Compiler XE 13.0</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -278,24 +274,11 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
     </ClCompile>
-    <ClCompile Include="fib.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
-    </ClCompile>
     <ClCompile Include="screenpressor.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
     </ClCompile>
     <ClCompile Include="logging.cpp" />
-    <ClCompile Include="lvm2.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
-    </ClCompile>
-    <ClCompile Include="lvm2_64.cpp" />
-    <ClCompile Include="rangecdc.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
-    </ClCompile>
     <ClCompile Include="screencap.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> /O3 -QaxW -Qip   /O3 -QaxW -Qip </AdditionalOptions>
@@ -313,20 +296,14 @@
     <ClInclude Include="ans_contexts.h" />
     <ClInclude Include="conf.h" />
     <ClInclude Include="defines.h" />
-    <ClInclude Include="fib.h" />
     <ClInclude Include="screenpressor.h" />
     <ClInclude Include="logging.h" />
-    <ClInclude Include="lvm2.h" />
-    <ClInclude Include="lvm2_64.h" />
-    <ClInclude Include="rangecdc.h" />
     <ClInclude Include="ransmt.h" />
     <ClInclude Include="rans_byte.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="screencap.h" />
     <ClInclude Include="squad.h" />
     <ClInclude Include="sub.h" />
-    <ClInclude Include="vm.h" />
-    <ClInclude Include="vmdata.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="screenpressor.rc" />
