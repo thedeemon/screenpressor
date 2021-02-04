@@ -1,0 +1,77 @@
+;
+; ScreenPressor codec for x64
+;
+; Copyright (c) 2009-2020 Infognition Co., Ltd.
+;
+[version]
+signature="$CHICAGO$"
+;Class=MEDIA
+
+
+;[Installable.Drivers]
+;SCPR = 1:scpr64.dll, "vidc.SCPR", "Infognition ScreenPressor (x64)", , ,
+
+[DefaultInstall]
+CopyFiles=SCPR.Files.Inf,SCPR.Files.Dll,SCPR-PF
+AddReg=SCPR.Reg
+Updateinis = SCPR.INIs
+
+[DefaultInstall.ntx86]
+CopyFiles=SCPR.Files.Inf,SCPR.Files.Dll,SCPR-PF
+AddReg=SCPR.Reg
+
+[DefaultUnInstall]
+DelFiles=SCPR.Files.Dll,SCPR.Files.Inf,SCPR-PF
+DelReg=SCPR.Reg
+DelDirs=DefaultUninstall.DelDirs
+Updateinis = SCPR.INIs.Del
+
+[DefaultUninstall.DelDirs]
+%16422%\%PROGRAM_FLDR%
+
+[SourceDisksNames]
+1="ScreenPressor","",1
+
+[SourceDisksFiles]
+SCPR64.INF=1
+SCPR64.DLL=1
+readme.txt=1
+license.txt=1
+
+[DestinationDirs]
+SCPR.Files.Inf=17
+SCPR.Files.Dll=11
+SCPR-PF=16422,%PROGRAM_FLDR%
+
+[SCPR.Files.Inf]
+SCPR64.INF
+
+[SCPR.Files.Dll]
+SCPR64.DLL
+
+[SCPR-PF]
+readme.txt
+license.txt
+
+[SCPR.Reg]
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\VIDC.SCPR,Description,,"SCPR ScreenPressor [SCPR]"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\VIDC.SCPR,Driver,,"SCPR64.dll"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\VIDC.SCPR,FriendlyName,,"SCPR ScreenPressor [SCPR]"
+
+HKLM,"Software\Microsoft\Windows NT\CurrentVersion\drivers.desc",SCPR64.dll,,"SCPR ScreenPressor [SCPR]"
+HKLM,"Software\Microsoft\Windows NT\CurrentVersion\Drivers32",VIDC.SCPR,,"SCPR64.dll"
+
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\SCPR
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\SCPR,DisplayName,,"ScreenPressor x64 v4.2 (Remove Only)"
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\SCPR,UninstallString,,"rundll.exe setupx.dll,InstallHinfSection DefaultUninstall 132 %17%\SCPR64.INF"
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\SCPR,UninstallString,,"RunDLL32.exe advpack.dll,LaunchINFSection SCPR64.INF, DefaultUnInstall"
+
+
+[SCPR.INIs]
+system.ini, drivers32,, "VIDC.SCPR=SCPR64.dll"
+
+[SCPR.INIs.Del]
+system.ini, drivers32, "VIDC.SCPR=SCPR64.dll"
+
+[Strings]
+PROGRAM_FLDR="ScreenPressor"

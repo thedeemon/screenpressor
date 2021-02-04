@@ -1,14 +1,3 @@
-# ScreenPressor 
-ScreenPressor is a lossless video codec designed specifically for video screen capture (screencasts). It provides unprecedented compression ratio while keeping 100% of original information. Quality of lossless compression makes ScreenPressor perfect for use in online video conferencing and webinar applications. It's probably the best technical solution for video tutorials, presentations and instant screen (desktop) sharing. 
-
-Version 4.
-
-http://www.infognition.com/ScreenPressor/
-
-This is the Video-for-Windows version. Other forms like plain DLL (for Windows, Mac OSX and Linux), DirectShow filter etc. may be published in other repositories.
-
-----
-
                           ScreenPressor 4.2
 
 1. What is it?
@@ -50,4 +39,4 @@ ScreenPressor by running spconfig.exe from ScreenPressor folder.
 More information:
 http://www.infognition.com/ScreenPressor/
 
-(C) 2009-2021 Dmitry Popov, Infognition Co., Ltd.
+(C) 2009-2020 Infognition Co., Ltd.

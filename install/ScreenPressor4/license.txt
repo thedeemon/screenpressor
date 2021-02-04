@@ -1,0 +1,25 @@
+END-USER LICENSE AGREEMENT FOR "ScreenPressor 4.2"
+
+This end-user license agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and Infognition Co., Ltd. for ScreenPressor video codec, including computer software, electronic documentation and/or printed materials ("Software"). This license is for end users, NOT for developers wishing to use the codec in their products. If you need a developer license please contact Infognition Co. Ltd.
+
+NOTICE TO USERS: CAREFULLY READ THE FOLLOWING LEGAL AGREEMENT. USE OF THE SOFTWARE PROVIDED WITH THIS AGREEMENT ("the Software") CONSTITUTES YOUR ACCEPTANCE OF THESE TERMS. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT INSTALL AND/OR USE THIS SOFTWARE. USER'S USE OF THIS SOFTWARE IS CONDITIONED UPON COMPLIANCE BY USER WITH THE TERMS OF THIS AGREEMENT.
+
+1. Copyright and ownership.
+The Software is licensed, not sold. The Software and all rights are owned by Infognition Co., Ltd. and are protected by copyright law and international copyright treaties. You acknowledge that no title to the intellectual property in the Software is transferred to you. You further acknowledge that title and full ownership rights to the Software will remain the exclusive property of Infognition Co., Ltd. and you will not acquire any rights to the Software except as expressly set forth in this license. 
+
+You may not use, copy, rent, lease, sell, modify, decompile, disassemble, otherwise reverse engineer, or transfer the licensed program except as provided in this agreement. Any such unauthorized use shall result in immediate and automatic termination of this license. All rights not expressly granted here are reserved to Infognition Co., Ltd.
+
+2. Grant of License.
+This license grants you the following non-exclusive, non-assignable, non-transferable, limited, personal rights: 
+You may install and use one copy of the Software on a single computer at a time and only by one user at a time. The ScreenPressor video codec and the associated install executable (ScreenPressor.exe) may be freely distributed for the purpose of allowing end users to view files created with it. 
+You may not reverse engineer, decompile, translate, localize or disassemble the Software.
+You may not rent, sublicense or lease the Software.
+
+3. Distribution.
+The Software may be freely distributed if provided distribution package is not modified. No person or company may charge a fee for the distribution of the Software without written permission from the copyright holder.
+
+4. Disclaimer of warranty.
+This software is provided "as is". Infognition Co., Ltd. makes no warranty, expressed or implied, with regard to the software. All implied warranties, including the warranties of merchantability and fitness for a particular use, are hereby excluded.
+To the maximum extent permitted by applicable law, in no event shall Infognition Co., Ltd. or its suppliers be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use this product.
+
+

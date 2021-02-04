@@ -1,0 +1,74 @@
+;
+; ScreenPressor
+;
+; Copyright (c) 2009-2020 Infognition Co., Ltd.
+;
+[version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles=SCPR.Files.Inf,SCPR.Files.Dll,SCPR-PF
+AddReg=SCPR.Reg
+Updateinis = SCPR.INIs
+
+[DefaultInstall.ntx86]
+CopyFiles=SCPR.Files.Inf,SCPR.Files.Dll,SCPR-PF
+AddReg=SCPR.Reg
+
+[DefaultUnInstall]
+DelFiles=SCPR.Files.Dll,SCPR.Files.Inf,SCPR-PF
+DelReg=SCPR.Reg
+DelDirs=DefaultUninstall.DelDirs
+Updateinis = SCPR.INIs.Del
+
+[DefaultUninstall.DelDirs]
+%16422%\%PROGRAM_FLDR%
+
+[SourceDisksNames]
+1="ScreenPressor","",1
+
+[SourceDisksFiles]
+SCPR.INF=1
+SCPR.DLL=1
+spconfig.exe=1
+readme.txt=1
+license.txt=1
+
+[DestinationDirs]
+SCPR.Files.Inf=17
+SCPR.Files.Dll=11
+SCPR-PF=16422,%PROGRAM_FLDR%
+
+[SCPR.Files.Inf]
+SCPR.INF
+
+[SCPR.Files.Dll]
+SCPR.DLL
+
+[SCPR-PF]
+spconfig.exe
+readme.txt
+license.txt
+
+[SCPR.Reg]
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\VIDC.SCPR,Description,,"SCPR ScreenPressor [SCPR]"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\VIDC.SCPR,Driver,,"SCPR.dll"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaResources\icm\VIDC.SCPR,FriendlyName,,"SCPR ScreenPressor [SCPR]"
+
+HKLM,"Software\Microsoft\Windows NT\CurrentVersion\drivers.desc",SCPR.dll,,"SCPR ScreenPressor [SCPR]"
+HKLM,"Software\Microsoft\Windows NT\CurrentVersion\Drivers32",VIDC.SCPR,,"SCPR.dll"
+
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\SCPR
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\SCPR,DisplayName,,"Infognition ScreenPressor v4.2 (Remove Only)"
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\SCPR,UninstallString,,"rundll.exe setupx.dll,InstallHinfSection DefaultUninstall 132 %17%\SCPR.INF"
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\SCPR,UninstallString,,"RunDLL32.exe advpack.dll,LaunchINFSection SCPR.INF, DefaultUnInstall"
+
+
+[SCPR.INIs]
+system.ini, drivers32,, "VIDC.SCPR=SCPR.dll"
+
+[SCPR.INIs.Del]
+system.ini, drivers32, "VIDC.SCPR=SCPR.dll"
+
+[Strings]
+PROGRAM_FLDR="ScreenPressor"
